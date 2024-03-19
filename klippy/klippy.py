@@ -343,6 +343,7 @@ def main():
     else:
         logging.getLogger().setLevel(debuglevel)
     logging.info("Starting Klippy...")
+    logging.info(f"klippy debuglevel: {debuglevel}, default: {logging.INFO}")
     git_info = util.get_git_version()
     git_vers = git_info["version"]
     extra_files = [fname for code, fname in git_info["file_status"]
