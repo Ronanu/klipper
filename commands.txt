@@ -1,0 +1,12 @@
+# start klipper:
+
+python3 klipper/klippy/klippy.py ~/klipper/config/printer.cfg -a /tmp/klippy_uds -l /tmp/klippy.log7
+
+# activate virtual Environment
+
+source myenv/bin/activate
+
+deactivate
+
+git config --global user.name "Ronanu"
+git config --global user.email "felixrodlsberger@gmail.com"
